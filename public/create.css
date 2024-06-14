@@ -1,0 +1,192 @@
+.banner-container{
+    padding: 30px;
+}
+
+/* Navbar Style */
+.navbar-me {
+    width: 100%;
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    padding: 10px 0;
+}
+
+.navbar-me input {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 7px 20px;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing between the input fields */
+    border-radius: 5px;
+    border-style: none;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensure padding does not affect total width */
+}
+
+.navbar-me button {
+    color: white;
+    background-color: #4a4a4a; /* Button background color */
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 10px; /* Adjust spacing around the button */
+}
+
+
+
+        /* Table Style */
+
+   .table-container{     
+    width: 90%;
+    margin: 30px auto;
+    overflow-x: auto;
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .styled-table thead {
+    background-color: #4a4a4a;
+    color: #ffffff;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+  }
+
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .styled-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .styled-table .summary-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+
+  .styled-table .kcu {
+    border-color: transparent;
+  }
+
+  /* Form Style */
+  .container-form{
+    display: grid;
+    padding: 1em;
+    margin: auto auto 10px auto;
+    width: 95%;
+    grid-template-columns: repeat(6, 1fr); /* Changed to two columns for responsiveness */
+    grid-gap: 20px; /* Added gap between grid items */
+    background-color: #4b4b4b;
+    border-radius: 1rem;
+    color: #ffffff  ;
+    justify-items: center;
+}
+
+.form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #c9c9c9;
+}
+
+.form-1,
+.form-2,
+.form-3,
+.form-4,
+.form-5,
+.form-6 {
+    grid-column: span 1; /* Changed to span 1 column for responsiveness */
+    grid-row: span 1; /* Changed to span 1 row for responsiveness */
+}
+
+.submit-button {
+    grid-column: span 6;
+    width: 10%; /* Adjust the width of the button */
+    padding: 8px;
+    font-size: 12px;
+    background-color: #c9c9c9;
+    color: #4b4b4b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; /* Center the button within the grid item */
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #a9a9a9;
+}
+
+@media (max-width: 768px) {
+
+    .container-form {
+        grid-template-rows: repeat(2, 1fr); /* Three rows */
+        grid-template-columns: repeat(3, 1fr); /* Two columns */
+        grid-gap: 10px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .form {
+        width: 100%; /* Ensure forms take full width of their grid cell */
+    }
+
+    .spk-container {
+        width: 100%; /* Use full width */
+        margin: 50px 0px 25px 0px; /* Adjust margin for better spacing */
+    }
+
+    .spk-container input {
+        padding: 10px 35px 10px 15px;
+    }
+
+    .navbar-me input {
+        margin: 5px 10px; /* Adjust spacing for smaller screens */
+        width: 90%; /* Ensure input fields take up most of the width */
+    }
+
+    .navbar-me button{
+        font-size: 11px;
+    }
+
+    .styled-table{
+        border-radius: 0px;
+    }
+
+    .submit-button{
+        grid-column: span 3;
+    }
+}

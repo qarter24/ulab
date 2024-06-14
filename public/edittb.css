@@ -1,0 +1,216 @@
+.banner {
+            background: linear-gradient(to bottom, #f5f5f5, #464646);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 150px;
+        }
+        
+        .banner img {
+            height: 70px; /* Adjust the height as necessary */
+            max-width: 100%; /* Ensure the image does not exceed the container's width */
+        }
+        .spk-container {
+            position: relative;
+            margin: 0 20px;
+            width: 50%;
+        }
+        .spk-container input {
+            width: 100%;
+            padding: 10px 40px 10px 20px; /* Adjust padding for better alignment */
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box; /* Ensure padding does not affect total width */
+        }
+        
+        .title-text {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: "Poppins", sans-serif;
+            font-size: larger;
+            font-weight: bold;
+        }  
+
+/* Navbar Style */
+.navbar-me {
+    width: 100%;
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    padding: 10px 0;
+}
+
+.navbar-me input {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding: 7px 20px;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing between the input fields */
+    border-radius: 5px;
+    border-style: none;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensure padding does not affect total width */
+}
+
+.navbar-me button {
+    color: white;
+    background-color: #4a4a4a; /* Button background color */
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 10px; /* Adjust spacing around the button */
+}
+
+  /* Form Style */
+  .container-form{
+    display: grid;
+    padding: 10px 0px;
+    grid-template-columns: repeat(1, 1fr); /* Changed to two columns for responsiveness */
+    grid-gap: 15px; /* Added gap between grid items */
+    border-radius: 1rem;
+    margin: 10px 0px;
+}
+
+.form {
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b5b5b;
+}
+
+.form-header {
+    width: 10%;
+    text-align:center ;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-komponen {
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b5b5b;
+}
+
+.form-header-komponen {
+    width: 10%;
+    text-align: left;
+}
+
+.form-body-komponen {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-body-komponen input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #c9c9c9;
+}
+
+.form input {
+    width: 100px;
+    height: 30px;
+    margin: 5px 5px;
+    border: none;   
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #c9c9c9;
+}
+
+
+@media (max-width: 768px) {
+
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .banner img {
+
+        display: none;
+    }
+
+    .spk-container {
+        width: 100%; /* Use full width */
+        margin: 50px 0px 25px 0px; /* Adjust margin for better spacing */
+    }
+
+    .spk-container input {
+        padding: 10px 35px 10px 15px;
+    }
+
+    .navbar-me input {
+        margin: 5px 10px; /* Adjust spacing for smaller screens */
+        width: 90%; /* Ensure input fields take up most of the width */
+    }
+
+    .navbar-me button{
+        font-size: 11px;
+    }
+
+    .styled-table{
+        border-radius: 0px;
+    }
+
+    .container-form {
+        grid-template-rows: repeat(6, 1fr); /* Three rows */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-gap: 10px; /* Adjust gap for smaller screens */
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .form {
+        width: 100%; /* Ensure forms take full width of their grid cell */
+    }
+
+    .form-body{
+        flex-direction: column;
+        width: 50%;
+        margin: 0px 40px;
+    }
+
+    .form-body input{
+        width: 100%;
+    }
+
+    .form-body-komponen{
+        flex-direction: column;
+        width: 50%;
+        margin: 0px 40px;
+    }
+
+    .form-body-komponen input{
+        width: 100%;
+    }
+
+}
